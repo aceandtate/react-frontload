@@ -56,7 +56,7 @@ function waitForAllToComplete(
 
         return error
       },
-      promise['then']((data) => data),
+      promise['then']((data) => data)),
     ),
   ).then(() => {
     if (continueRenderingOnError !== true && firstError) {
